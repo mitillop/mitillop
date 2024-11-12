@@ -152,20 +152,21 @@ def main():
     t.gen_text("", t.curr_row, count=120, contin=True)
 
     # image = gifos.utils.upload_imgbb("output.gif", 129600)  # 1.5 days expiration
-    readme_file_content = rf"""<div align="justify">
-                                <picture>
-                                    <source media="(prefers-color-scheme: dark)" srcset="./output.gif">
-                                    <source media="(prefers-color-scheme: light)" srcset="./output.gif">
-                                    <img alt="GIFOS" src="output.gif">
-                                </picture>
+    readme_file_content = rf"""
+    <div align="justify">
+    <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="./output.gif">
+        <source media="(prefers-color-scheme: light)" srcset="./output.gif">
+        <img alt="GIFOS" src="output.gif">
+    </picture>
 
-                                <sub><i>Generated automatically using [x0rzavi/github-readme-terminal](https://github.com/x0rzavi/github-readme-terminal) on {time_now}</i></sub>
+    <sub><i>Generated automatically using [x0rzavi/github-readme-terminal](https://github.com/x0rzavi/github-readme-terminal) on {time_now}</i></sub>
 
-                                <!-- <details>
-                                <summary>More details</summary>
+    <!-- <details>
+    <summary>More details</summary>
 
-                                </details> -->
-                                </div>
+    </details> -->
+    </div>
 
 <!-- Image deletion URL: NONE -->"""
     with open("README.md", "w") as f:
